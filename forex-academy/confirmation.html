@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Received | Forex Academy</title>
+  <meta name="description" content="Thank you for applying to the Forex Academy 4-Week Beginner Training Program. Review your next enrollment steps.">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .confirmation-card {
+      background: linear-gradient(180deg, #13223B 0%, #0E182A 100%);
+      border: 1px solid var(--color-border-hover);
+      border-radius: var(--radius-xl);
+      padding: clamp(var(--space-8), 6vw, var(--space-16));
+      margin-top: var(--space-8);
+      margin-bottom: var(--space-16);
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .confirmation-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #C8A96A, #E5C78A, #C8A96A);
+    }
+    .confirmation-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: var(--radius-full);
+      background-color: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-success);
+      margin: 0 auto var(--space-6);
+    }
+    .steps-checklist {
+      text-align: left;
+      background: rgba(11, 20, 38, 0.6);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-6);
+      margin: var(--space-8) auto;
+      max-width: 620px;
+    }
+    .step-check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.9375rem;
+    }
+    .step-check-item:last-child {
+      border-bottom: none;
+    }
+    .step-check-num {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--color-gold);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header is-scrolled" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html#hero" class="brand-logo" aria-label="Forex Academy Home">
+        <div class="brand-emblem" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+            <rect width="64" height="64" rx="14" fill="#14243D" stroke="#C8A96A" stroke-width="3"/>
+            <path d="M18 16 H44 M18 16 V48 M18 30 H36" stroke="#C8A96A" stroke-width="5" stroke-linecap="round"/>
+            <line x1="44" y1="24" x2="44" y2="44" stroke="#C8A96A" stroke-width="2.5"/>
+            <rect x="41" y="28" width="6" height="12" rx="1.5" fill="#C8A96A"/>
+          </svg>
+        </div>
+        <span data-config="academyName">FOREX ACADEMY</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="index.html#hero" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#program" class="nav-link">Program</a>
+        <a href="index.html#curriculum" class="nav-link">Curriculum</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" data-config="whatsappLink">
+          WhatsApp Desk
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" style="padding-top: var(--space-12);">
+      <div class="container container-narrow">
+        <div class="confirmation-card">
+          <div class="confirmation-icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+
+          <span class="eyebrow" style="margin-bottom: var(--space-2);">Application Dossier Received</span>
+          <h1 style="font-size: clamp(1.85rem, 3.5vw, 2.6rem); margin-bottom: var(--space-4);">
+            Your Cohort Application Has Been Received
+          </h1>
+          <p class="lead-text" style="margin-left: auto; margin-right: auto; max-width: 600px;">
+            Thank you for applying to the <strong>Forex Beginner Training Program</strong>. Our admissions team reviews applications in the order received.
+          </p>
+
+          <!-- What to Expect Next -->
+          <div class="steps-checklist">
+            <h3 style="font-size: 1.15rem; color: var(--color-gold); margin-bottom: var(--space-4); text-align: left;">
+              What Happens Next:
+            </h3>
+
+            <div class="step-check-item">
+              <span class="step-check-num">01.</span>
+              <div>
+                <strong style="color: var(--color-text-primary);">Admissions Review (Within 24 Hours)</strong>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-top: 2px;">
+                  Our committee verifies your profile and checks available seating for the upcoming cohort starting <strong data-config="cohortStartDate">First Monday of Next Month</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-check-item">
+              <span class="step-check-num">02.</span>
+              <div>
+                <strong style="color: var(--color-text-primary);">Official Offer & Tuition Invoice</strong>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-top: 2px;">
+                  You will receive an official acceptance notice via email and WhatsApp with payment instructions for the <span data-config="courseFee">₦45,000 tuition fee</span>.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-check-item">
+              <span class="step-check-num">03.</span>
+              <div>
+                <strong style="color: var(--color-text-primary);">Pre-Class Orientation Pack</strong>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-top: 2px;">
+                  Upon tuition confirmation, your student credential, MetaTrader 5 demo installation guide, and student cohort access will be dispatched.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Inquiries Action -->
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4); margin-top: var(--space-8);">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-config="whatsappLink">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              Chat With Admissions Advisor
+            </a>
+            <a href="index.html#curriculum" class="btn btn-secondary">
+              Review Course Syllabus
+            </a>
+          </div>
+
+          <p style="font-size: 0.8125rem; color: var(--color-text-subtle); margin-top: var(--space-8);">
+            Have questions about your cohort placement? Contact admissions at <a href="mailto:admissions@forexacademy.edu" class="text-gold" data-config="contactEmail">admissions@forexacademy.edu</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p>&copy; <span id="copyright-year">2026</span> <span data-config="academyName">FOREX ACADEMY</span>. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="index.html#disclaimer" class="footer-link">Risk Disclosure</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="index.html#hero" class="footer-link">Back to Homepage</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
