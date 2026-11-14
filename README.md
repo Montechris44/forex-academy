@@ -53,7 +53,7 @@ const CONFIG = {
   cohortStartDate: "First Monday of Next Month",
 
   // 7. Program Tuition Fee
-  courseFee: "₦45,000 (All 4 Weeks Included)",
+  courseFee: "₦200,000 (All 4 Weeks Included)",
 
   // 8. Program Delivery Format
   classFormat: "Online & Physical"
