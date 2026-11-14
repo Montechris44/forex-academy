@@ -28,10 +28,10 @@ const CONFIG = {
   embedForm: false,
 
   // Admissions Desk WhatsApp Number (include country code e.g. +234 for Nigeria)
-  whatsappNumber: "+2348000000000",
+  whatsappNumber: "+23408144784467",
 
   // Admissions Desk Official Email Address
-  contactEmail: "admissions@forexacademy.edu",
+  contactEmail: "Mayormontechris@gmail.com",
 
   // Upcoming Cohort Start Date displayed across headers & badges
   cohortStartDate: "First Monday of Next Month",
@@ -83,7 +83,7 @@ function initDynamicConfig() {
   });
 
   // Bind WhatsApp Direct Link
-  const cleanPhone = CONFIG.whatsappNumber.replace(/[^0-9]/g, "");
+  const cleanPhone = getCleanWhatsAppPhone(CONFIG.whatsappNumber);
   const defaultMessage = encodeURIComponent(
     `Hello ${CONFIG.academyName} Admissions, I am inquiring about the upcoming 4-Week Beginner Training Program.`
   );
@@ -495,7 +495,7 @@ function displaySetupNotice(data, alertNotice, alertTitle, alertBody, alertActio
     Setup Notice: External Registration Service Link Required
   `;
 
-  const cleanPhone = CONFIG.whatsappNumber.replace(/[^0-9]/g, "");
+  const cleanPhone = getCleanWhatsAppPhone(CONFIG.whatsappNumber);
   const waPreText = encodeURIComponent(
     `Hello Admissions, I have completed the registration requirements on the website.\n\n` +
     `• Name: ${data.fullName}\n` +
@@ -608,4 +608,16 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+// Normalizes international and Nigerian phone numbers for direct wa.me URLs
+function getCleanWhatsAppPhone(rawPhone) {
+  let clean = rawPhone.replace(/[^0-9]/g, "");
+  // Handles Nigerian numbers entered as +2340814... by removing the redundant 0 after 234
+  if (clean.startsWith("2340") && clean.length === 14) {
+    clean = "234" + clean.slice(4);
+  } else if (clean.startsWith("0") && clean.length === 11) {
+    clean = "234" + clean.slice(1);
+  }
+  return clean;
 }

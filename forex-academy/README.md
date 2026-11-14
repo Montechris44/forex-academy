@@ -44,10 +44,10 @@ const CONFIG = {
   embedForm: false,
 
   // 4. Admissions Desk WhatsApp Number (international format with country code)
-  whatsappNumber: "+2348000000000",
+  whatsappNumber: "+23408144784467",
 
   // 5. Official Admissions Email
-  contactEmail: "admissions@forexacademy.edu",
+  contactEmail: "Mayormontechris@gmail.com",
 
   // 6. Upcoming Cohort Start Date
   cohortStartDate: "First Monday of Next Month",
